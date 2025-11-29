@@ -1,33 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<style>
-    /*reset*/
-    * {margin: 0; padding: 0; box-sizing: border-box;}
-    ul,ol,li {list-style: none; margin:0; padding: 0;}
-    a {text-decoration: none; color:#000;}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*reset*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    /*main*/
-    header {width: 1100px; height: 100px; margin:0 auto; }
-    header > #logo {width: 130px; height: 70px; float: left; margin: 20px 0 0 20px; }
-    header > #logo > a > img {width: 100%; height: 100%;}
-    nav {width: 740px; height: 30px; float:right; margin:30px 30px 0 0px; }
-    nav > ul > li > a { font-size: 17px; float: left; margin:0px 25px; font-weight: bold;}
-    nav > ul > li > a:hover {color: green;}
+        ul,
+        ol,
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
-    #slider {width: 1100px; height: 450px; margin:0 auto;}
-    #slider > img {width: 100%; height: 100%;}
-    section {width: 1100px; height: 280px; margin:0 auto; background-color: cyan;}
-    article {width: 340px; height: 145px; float: left; margin: 50px 10px; background-color:tomato;}
-   
-    footer {width: 1100px; height: 100px; margin:0 auto; background-color: #eee;}
-    footer > img {width: 100px; height: 50px; float: left; margin:20px 0 0 30px;}
-    footer > p {font-size: 12px; float:right; margin: 30px 20px 0 0px;}
-</style>
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        /*main*/
+        header {
+            width: 1100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        header>#logo {
+            width: 130px;
+            height: 70px;
+            float: left;
+            margin: 20px 0 0 20px;
+        }
+
+        header>#logo>a>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        nav {
+            width: 740px;
+            height: 30px;
+            float: right;
+            margin: 30px 30px 0 0px;
+        }
+
+        nav>ul>li>a {
+            font-size: 17px;
+            float: left;
+            margin: 0px 25px;
+            font-weight: bold;
+        }
+
+        nav>ul>li>a:hover {
+            color: green;
+        }
+
+        #slider {
+            width: 1100px;
+            height: 450px;
+            margin: 0 auto;
+        }
+
+        #slider>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        section {
+            width: 1100px;
+            height: 280px;
+            margin: 0 auto;
+            background-color: cyan;
+        }
+
+        section>article {
+            width: 340px;
+            height: 145px;
+            float: left;
+            float: left;
+            margin: 50px 10px;
+            background-color: #fff;
+        }
+
+        article {
+            width: 340px;
+            height: 145px;
+            float: left;
+            margin: 50px 10px;
+            background-color: tomato;
+        }
+
+        article>h3 {
+            font-size: 15px;
+        }
+
+        article>h4 {
+            background-color: gold;
+            font-size: 13px;
+        }
+
+        article>h4 {
+            background-color: gold;
+            font-size: 13px;
+        }
+
+        article>p>a {
+            background-color: tomato;
+            font-size: 12px;
+        }
+
+        article>img {
+            float: left;
+            margin: 10px 10px 0 0;
+        }
+
+        .img1 {
+            width: 100%;
+            height: 80px;
+            float: left;
+            margin: 10px 10px 0 0;
+        }
+
+        article>.iconbox {
+            width: 90px;
+            height: 90px;
+            background-color: red;
+            float: left;
+            margin: 10px 20px 10px 0px;
+            text-align: center;
+        }
+
+        article.iconbox>img {
+            display: block;
+        }
+
+        article.iconbox>span {
+            display: block;
+            background-color: gold;
+            font-size: 11px;
+        }
+
+        footer {
+            width: 1100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #eee;
+        }
+
+        footer>img {
+            width: 100px;
+            height: 50px;
+            float: left;
+            margin: 20px 0 0 30px;
+        }
+
+        footer>p {
+            font-size: 12px;
+            float: right;
+            margin: 30px 20px 0 0px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div id="logo">
@@ -47,13 +189,42 @@
     </header>
     <div id="slider"><img src="img/1.jpg" alt=""></div>
     <section>
-        <article>1</article>
-        <article>2</article>
-        <article>3</article>
+        <article>
+            <h3>NEWS</h3>
+            <img src="img/4.jpg" alt="">
+            <h4>Discovery 5</h4>
+            <p><a href="#">랜드로버가 만든 정통 SUV, 디스커버리의 신형 모델이 다음 달 공개된다.</a></p>
+        </article>
+
+        <article>
+            <h3>
+                랜드로버 모델 살펴보기
+            </h3>
+            <a href="#"><img src="img/8.jpg" alt="" class="img1"></a>
+        </article>
+
+        <article>
+            <h3>고객지원</h3>
+            <div class="iconbox">
+                <img src="img/icon3.jpg" alt="">
+                <span>시승신청</span>
+            </div>
+            <div class="iconbox">
+                <img src="img/icon4.jpg" alt="">
+                <span>뉴스레터 신청</span>
+            </div>
+            <div class="iconbox">
+                <img src="img/icon5.jpg" alt="">
+                <span>전시장 찾기</span>
+            </div>
+        </article>
+
     </section>
     <footer>
         <img src="img/logo2.jpg" alt="">
-        <p>Jaguar Land Rover Limited: Registered office: Abbey Road, Whitley, Coventry CV3 4LF. Registered in England No: 1672070</p>
+        <p>Jaguar Land Rover Limited: Registered office: Abbey Road, Whitley, Coventry CV3 4LF. Registered in England
+            No: 1672070</p>
     </footer>
 </body>
+
 </html>
