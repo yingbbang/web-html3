@@ -1,156 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /*reset*/
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    /*reset*/
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    ul,ol,li {list-style: none; margin:0; padding: 0;}
+    a {text-decoration: none; color:#000;}
 
-        ul,
-        ol,
-        li {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
+    /*main*/
+    header {width: 1100px; height: 100px; margin:0 auto; }
+    header > #logo {width: 130px; height: 70px; float: left; margin: 20px 0 0 20px; }
+    header > #logo > a > img {width: 100%; height: 100%;}
+    nav {width: 740px; height: 30px; float:right; margin:30px 30px 0 0px; }
+    nav > ul > li > a { font-size: 17px; float: left; margin:0px 25px; font-weight: bold;}
+    nav > ul > li > a:hover {color: green;}
 
-        a {
-            text-decoration: none;
-            color: #000;
-        }
-
-        /*main*/
-        header {
-            width: 1100px;
-            height: 100px;
-            margin: 0 auto;
-            background-color: gold;
-        }
-
-        header>#logo {
-            width: 130px;
-            height: 70px;
-            float: left;
-            margin: 20px 0 0 20px;
-        }
-
-        header>#logo {
-            width: 130px;
-            height: 70px;
-            float: left;
-            margin: 20px 0 0 20px;
-            background-color: black
-        }
-
-        header>#logo>a>img {
-            width: 100px;
-            height: 100%;
-        }
-
-        nav {
-            width: 740px;
-            height: 30px;
-            float: right;
-            margin: 30px 30px 0 0px;
-            background-color: #fff;
-        }
-
-        nav>ul>li>a {
-            font-size: 17px;
-            float: left;
-            margin: 0px 20px;
-            font-weight: bold;
-        }
-
-        nav>ul>li>a:hover {
-            color: green;
-        }
-
-        #slider {
-            width: 1100px;
-            height: 450px;
-            margin: 0 auto;
-            background-color: tomato;
-        }
-
-        #slider>img {
-            width: 100%;
-            height: 100%
-        }
-
-        section {
-            width: 1100px;
-            height: 280px;
-            margin: 0 auto;
-            background-color: cyan;
-        }
-
-        article {
-            width: 340px;
-            height: 145px;
-            float: left;
-            margin: 50px 10px;
-            background-color: tomato;
-        }
-
-        footer {
-            width: 1100px;
-            height: 100px;
-            margin: 0 auto;
-            background-color: gray;
-        }
-
-        footer>img {
-            width: 100px;
-            height: 50px;
-            float: left;
-            margin: 20px 0 0 30px;
-        }
-
-        footer>p {
-            font-size: 12px;
-            float: right;
-            margin: 30px 20px 0 0px;
-        }
-    </style>
+    #slider {width: 1100px; height: 450px; margin:0 auto;}
+    #slider > img {width: 100%; height: 100%;}
+    section {width: 1100px; height: 280px; margin:0 auto; background-color: cyan;}
+    article {width: 340px; height: 145px; float: left; margin: 50px 10px; background-color:tomato;}
+   
+    footer {width: 1100px; height: 100px; margin:0 auto; background-color: #eee;}
+    footer > img {width: 100px; height: 50px; float: left; margin:20px 0 0 30px;}
+    footer > p {font-size: 12px; float:right; margin: 30px 20px 0 0px;}
+</style>
 </head>
-
 <body>
     <header>
         <div id="logo">
-            <a href="#"></a>
-            <img src="img/logo2.jpg" alt="로고">
+            <a href="#">
+                <img src="img/logo.jpg" alt="로고">
+            </a>
         </div>
         <nav>
             <ul>
                 <li><a href="#">VEHICLES</a></li>
                 <li><a href="#">PRICE</a></li>
-                <li><a href="#">OFFERS</a></li>
+                <li><a href="#">OFFERS</a> </li>
                 <li><a href="#">SECONDHSND CAR</a></li>
-                <li><a href="#">QWNERSHIP</a></li>
+                <li><a href="#">OWNERSHIP</a></li>
             </ul>
         </nav>
     </header>
-
     <div id="slider"><img src="img/1.jpg" alt=""></div>
-
     <section>
         <article>1</article>
         <article>2</article>
         <article>3</article>
     </section>
-
     <footer>
         <img src="img/logo2.jpg" alt="">
-        <p>Jaguar Land Rover Limited: Re</p>
+        <p>Jaguar Land Rover Limited: Registered office: Abbey Road, Whitley, Coventry CV3 4LF. Registered in England No: 1672070</p>
     </footer>
 </body>
-
 </html>
