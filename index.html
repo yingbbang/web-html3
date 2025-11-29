@@ -85,26 +85,12 @@
             width: 340px;
             height: 145px;
             float: left;
-            float: left;
             margin: 50px 10px;
             background-color: #fff;
         }
 
-        article {
-            width: 340px;
-            height: 145px;
-            float: left;
-            margin: 50px 10px;
-            background-color: tomato;
-        }
-
         article>h3 {
             font-size: 15px;
-        }
-
-        article>h4 {
-            background-color: gold;
-            font-size: 13px;
         }
 
         article>h4 {
@@ -117,32 +103,28 @@
             font-size: 12px;
         }
 
-        article>img {
+        article>a>img {
             float: left;
             margin: 10px 10px 0 0;
         }
 
         .img1 {
             width: 100%;
-            height: 80px;
+            height: 110px;
             float: left;
             margin: 10px 10px 0 0;
         }
 
-        article>.iconbox {
+        article>a>.iconbox {
             width: 90px;
             height: 90px;
+            text-align: center;
             background-color: red;
             float: left;
             margin: 10px 20px 10px 0px;
-            text-align: center;
         }
 
-        article.iconbox>img {
-            display: block;
-        }
-
-        article.iconbox>span {
+        article>a>.iconbox>span {
             display: block;
             background-color: gold;
             font-size: 11px;
@@ -191,34 +173,39 @@
     <section>
         <article>
             <h3>NEWS</h3>
-            <img src="img/4.jpg" alt="">
+            <a href="#"><img src="img/4.jpg" alt=""></a>
             <h4>Discovery 5</h4>
-            <p><a href="#">랜드로버가 만든 정통 SUV, 디스커버리의 신형 모델이 다음 달 공개된다.</a></p>
+            <p><a href="#"> 만든 정통 SUV, 디스커버리의 신형 모델이 다음 달 공개된다.</a></p>
         </article>
 
+
         <article>
-            <h3>
-                랜드로버 모델 살펴보기
-            </h3>
+            <h3>랜드로버 모델 살펴보기</h3>
             <a href="#"><img src="img/8.jpg" alt="" class="img1"></a>
         </article>
 
         <article>
             <h3>고객지원</h3>
-            <div class="iconbox">
-                <img src="img/icon3.jpg" alt="">
-                <span>시승신청</span>
-            </div>
-            <div class="iconbox">
-                <img src="img/icon4.jpg" alt="">
-                <span>뉴스레터 신청</span>
-            </div>
-            <div class="iconbox">
-                <img src="img/icon5.jpg" alt="">
-                <span>전시장 찾기</span>
-            </div>
-        </article>
+            <a href="#">
+                <div class="iconbox">
+                    <img src="img/icon3.jpg" alt="">
+                    <span>시승신청</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="iconbox">
+                    <img src="img/icon4.jpg" alt="">
+                    <span>뉴스레터 신청</span>
+                </div>
+            </a>
 
+            <a href="#">
+                <div class="iconbox">
+                    <img src="img/icon5.jpg" alt="">
+                    <span>전시장 찾기</span>
+                </div>
+            </a>
+        </article>
     </section>
     <footer>
         <img src="img/logo2.jpg" alt="">
